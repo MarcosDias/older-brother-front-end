@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {Menu} from 'semantic-ui-react';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Menu className="five item fixed inverted">
+          <div className="ui container">
+            <Menu.Item name="Produtos" active={true} link={true}/>
+            <Menu.Item name="Lojas" link={true}/>
+            <Menu.Item name="Older Brother" header={true} link={true} />
+            <Menu.Item name="Entrar" link={true}/>
+            <Menu.Item name="Carrinho" link={true}/>
+          </div>
+        </Menu >
       </div>
     );
   }
